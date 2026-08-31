@@ -1,5 +1,7 @@
 {
   "ui": {
-    "description": "Informatique bb"
+    "intro": {
+      "description": "Étudiant - Ingénieur - Développeur"
+    }
   }
 }

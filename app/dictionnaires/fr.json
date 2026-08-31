@@ -1,5 +1,11 @@
 {
   "ui": {
-    "description": "Informatique aa"
+    "intro": {
+      "description": "Étudiant - Ingénieur - Développeur"
+    },
+    "competences": {
+      "titre": "Ce que je sais faire",
+      "description": "Apprenez en plus sur mes compétences, ainsi que toute les technologies que je maitrise"
+    }
   }
 }
