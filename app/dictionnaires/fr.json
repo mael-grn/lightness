@@ -3,9 +3,44 @@
     "intro": {
       "description": "Étudiant - Ingénieur - Développeur"
     },
+    "moi": {
+      "titre": "Faisons connaissance",
+      "description": "ljnkjnbgkdsl hjfs hdfjkldshf ksjfh skjfhkdsjhfkjdshfk dsfhsdjk fsdkjfhsdkjfh sdkjhfjdsk fhjsdkhf jksdhfkjdshf kjdshfs"
+    },
     "competences": {
       "titre": "Ce que je sais faire",
-      "description": "Apprenez en plus sur mes compétences, ainsi que toute les technologies que je maitrise"
+      "description": "Apprenez en plus sur mes compétences, ainsi que toute les technologies que je maitrise",
+      "nom": "nom",
+      "type": "type",
+      "maitrise": "Niveau de maitrise",
+      "apprentissage": "Apprentissage",
+      "nombre_projets": "Nombre de projets"
     }
-  }
+  },
+  "competences": [
+    {
+      "nom": "TypeScript",
+      "type": "Programmation ",
+      "chemin_logo": "typescript.png",
+      "maitrise": 4,
+      "apprentissage": "Autodidacte",
+      "nombre_projets": 0
+    },
+    {
+      "nom": "NextJS",
+      "type": "Programmation",
+      "chemin_logo": "nextjs.jpg",
+      "maitrise": 5,
+      "apprentissage": "Autodidacte",
+      "nombre_projets": 0
+    },
+    {
+      "nom": "JavaScript",
+      "type": "Programmation",
+      "chemin_logo": "javascript.png",
+      "maitrise": 5,
+      "apprentissage": "Autodidacte",
+      "nombre_projets": 0
+    }
+  ]
 }

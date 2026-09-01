@@ -2,6 +2,28 @@
   "ui": {
     "intro": {
       "description": "Étudiant - Ingénieur - Développeur"
+    },
+    "competences": {
+      "titre": "Ce que je sais faire",
+      "description": "Apprenez en plus sur mes compétences, ainsi que toute les technologies que je maitrise"
     }
-  }
+  },
+  "competences": [
+    {
+      "nom": "TypeScript",
+      "type": "Programmation",
+      "chemin_logo": "typescript.png",
+      "maitrise": 4,
+      "apprentissage": "Autodidacte",
+      "nombre_projets": 0
+    },
+    {
+      "nom": "NextJS",
+      "type": "Programmation",
+      "chemin_logo": "nextjs.png",
+      "maitrise": 5,
+      "apprentissage": "Autodidacte",
+      "nombre_projets": 0
+    }
+  ]
 }
