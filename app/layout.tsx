@@ -33,7 +33,7 @@ export default function RootLayout({children}: LayoutProps<"/">) {
             className={`${limelight.variable} ${brico.variable} ${Geologicaa.variable} h-full antialiased`}
         >
 
-        <body className="min-h-screen bg-background w-full">
+        <body className="min-h-screen bg-background w-full overflow-x-hidden">
         <NavProvider>
             <header>
                 <NavBar/>
