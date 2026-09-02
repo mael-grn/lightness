@@ -1,10 +1,16 @@
 
 
-export interface Competence {
+export interface Musicien {
     nom: string;
-    type: string;
-    chemin_logo: string;
-    maitrise: number;
-    apprentissage: string;
-    nombre_projets: number;
+    prenom: string;
+    chemin_photo: string;
+    attribut: string;
+    description: string;
+}
+
+export interface Musique {
+    nom: string;
+    attribut: string;
+    chemin_photo: string;
+    chemin_son: string;
 }

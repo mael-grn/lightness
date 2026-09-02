@@ -1,17 +1,18 @@
 import type {Metadata} from "next";
-import {Archivo_Black, JetBrains_Mono, Geologica} from "next/font/google";
+import {Bricolage_Grotesque, Limelight, Geologica} from "next/font/google";
 import "./globals.css";
 import PageWrapper from "@/app/components/PageWrapper";
 import NavBar from "@/app/components/NavBar";
 import {NavProvider} from "@/app/context/NavContext";
 
-const Archivo = Archivo_Black({
-    variable: "--font-archivo",
+const brico = Bricolage_Grotesque({
+    variable: "--font-brico",
     weight: "400"
 });
 
-const Jetbrains = JetBrains_Mono({
-    variable: "--font-jetbrains",
+const limelight = Limelight({
+    variable: "--font-lime",
+    weight: "400",
     subsets: ["latin"],
 });
 
@@ -21,15 +22,15 @@ const Geologicaa = Geologica({
 });
 
 export const metadata: Metadata = {
-    title: "Maël garnier",
-    description: "Mon portfolio",
+    title: "Lightness Duo",
+    description: "",
 };
 
 export default function RootLayout({children}: LayoutProps<"/">) {
     return (
         <html
             lang="fr"
-            className={`${Jetbrains.variable} ${Archivo.variable} ${Geologicaa.variable} h-full antialiased`}
+            className={`${limelight.variable} ${brico.variable} ${Geologicaa.variable} h-full antialiased`}
         >
 
         <body className="min-h-screen bg-background w-full">

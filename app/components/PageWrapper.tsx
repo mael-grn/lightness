@@ -30,7 +30,7 @@ export default function PageWrapper({children}: { children: ReactNode }) {
                 damping: 25,
                 mass: 0.8,
             }}
-            className={"bg-background overflow-hidden min-h-screen w-full pt-16 flex flex-col"}>
+            className={"bg-background overflow-hidden min-h-screen w-full flex flex-col"}>
             {children}
         </motion.div>
     )

@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "name": "lightness",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,11 +10,13 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.8.13",
+    "@neondatabase/serverless": "^1.1.0",
     "framer-motion": "^13.1.1",
     "negotiator": "^1.1.0",
     "next": "16.3.1",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "swr": "^2.5.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
