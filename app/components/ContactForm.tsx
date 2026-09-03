@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Services from "@/app/services";
+// Remplace l'import de Services par la Server Action 👇
+import { sendEmailAction } from "@/app/actions/sendEmail";
 
 export default function ContactForm() {
     const [email, setEmail] = useState("");
@@ -37,12 +38,21 @@ export default function ContactForm() {
 
         setLoading(true);
         try {
-            await Services.sendEmail(email, identite, message);
+            // Appel de la Server Action au lieu de Services directement 👇
+            const res = await sendEmailAction(email, identite, message);
+
+            if (!res.success) {
+                console.error("Erreur retournée par Resend :", res.error);
+                setError("Une erreur s'est produite lors de l'envoi. Merci de réessayer.");
+                return;
+            }
+
             setSuccess("Message envoyé avec succès !");
             setEmail("");
             setIdentite("");
             setMessage("");
-        } catch {
+        } catch (err) {
+            console.error("Erreur lors de l'appel :", err);
             setError("Une erreur s'est produite. Merci de réessayer plus tard.");
         } finally {
             setLoading(false);
@@ -117,7 +127,7 @@ export default function ContactForm() {
                 />
             </div>
 
-            {/* Messages d'erreur et de confirmation animés */}
+            {/* Messages d'état */}
             <AnimatePresence mode="wait">
                 {error && (
                     <motion.div
@@ -146,7 +156,7 @@ export default function ContactForm() {
                 )}
             </AnimatePresence>
 
-            {/* Bouton de soumission avec la même physique spring et élévation */}
+            {/* Bouton de soumission */}
             <div className="flex justify-end pt-1">
                 <motion.button
                     type="submit"
