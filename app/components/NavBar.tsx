@@ -6,6 +6,22 @@ import {AnimatePresence, motion} from "framer-motion";
 export default function NavBar() {
     const {toggle, isOpen} = useNav();
 
+    const LINKS = [
+        "Accueil",
+        "Musiciens",
+        "Musiques",
+        "Contact"
+    ]
+
+    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, item: string) => {
+
+        if (isOpen) {
+            toggle();
+        }
+
+
+    };
+
     return (
         <nav>
             <motion.button
@@ -75,8 +91,23 @@ export default function NavBar() {
             >
                 Contact
             </motion.a>
-            <div className={"fixed -z-1 top-0 left-0 w-full h-screen bg-primary"}>
-
+            <div className={`fixed top-0 scroll-smooth left-0 w-full flex gap-4 flex-col h-screen justify-center p-4 bg-primary`}>
+                {
+                    LINKS.map((item, i) => {
+                        return (
+                            <motion.a
+                                className="z-999 cursor-pointer text-background text-2xl w-fit font-bold"
+                                key={i}
+                                whileHover={{opacity: 0.7}}
+                                whileTap={{scale: 0.8}}
+                                href={"#" + item}
+                                onClick={(e) => handleLinkClick(e, item)}
+                            >
+                                {item}
+                            </motion.a>
+                        )
+                    })
+                }
             </div>
         </nav>
     )

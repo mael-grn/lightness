@@ -30,17 +30,18 @@ export default function RootLayout({children}: LayoutProps<"/">) {
     return (
         <html
             lang="fr"
-            className={`${limelight.variable} ${brico.variable} ${Geologicaa.variable} h-full antialiased`}
+            className={`${limelight.variable} ${brico.variable} ${Geologicaa.variable} h-full antialiased overflow-x-hidden`}
         >
-
-        <body className="min-h-screen bg-background w-full overflow-x-hidden">
-        <NavProvider>
+        <body className="min-h-screen scroll-smooth bg-background w-full overflow-x-hidden"><NavProvider>
             <header>
                 <NavBar/>
             </header>
             <PageWrapper>
-                <div className={"fixed top-0 left-0 w-full h-20 bg-linear-to-b from-background to-transparent"}></div>
+                <div
+                    className={"fixed z-100 top-0 left-0 w-full h-40 bg-linear-to-b from-background to-transparent"}></div>
                 {children}
+                <div
+                    className={"fixed z-100 bottom-0 left-0 w-full h-20 bg-linear-to-t from-background to-transparent"}></div>
             </PageWrapper>
         </NavProvider>
 

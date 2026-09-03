@@ -2,6 +2,7 @@ import Services from "@/app/services";
 import { HeroImage } from "@/app/components/HeroImage";
 import {MusiqueCard} from "@/app/components/MusiqueCard";
 import {Musique} from "@/app/modeles";
+import ContactForm from "@/app/components/ContactForm";
 
 
 const exempleMusique: Musique = {
@@ -20,8 +21,8 @@ export default async function Home() {
     ]);
 
     return (
-        <div className="flex flex-col w-full h-full">
-            <div id="intro" className="relative flex w-full sm:mt-0 sm:mb-0 mt-32 mb-10 flex-col gap-4 sm:h-screen h-1/2 justify-center items-center">
+        <div className="flex bg-background z-99 flex-col w-full h-full">
+            <div id="Accueil" className="relative flex w-full sm:mt-0 sm:mb-0 mt-32 mb-10 flex-col gap-4 sm:h-screen h-1/2 justify-center items-center">
                 <HeroImage heroImageUrl={heroImageUrl} />
 
                 <h1 className="sm:text-8xl absolute w-full z-10 text-5xl font-bold text-center">
@@ -30,7 +31,7 @@ export default async function Home() {
 
             </div>
 
-            <section className="flex flex-col gap-6 w-full p-6 sm:p-14">
+            <section id={"Musiciens"} className="flex flex-col gap-6 w-full p-6 sm:p-14">
                 <h2 className="sm:text-5xl text-3xl">Musiciens</h2>
                 {!musiciens ? (
                     <p className="border-2 border-red-600 bg-red-400 px-4 py-2 rounded-2xl">
@@ -54,7 +55,7 @@ export default async function Home() {
                 )}
             </section>
 
-            <section className="flex flex-col gap-8 w-full p-6 sm:p-14">
+            <section id={"Musiques"} className="flex flex-col gap-8 w-full p-6 sm:p-14">
                 <h2 className="sm:text-5xl text-2xl">Musiques</h2>
                 {!musiques ? (
                     <p className="border-2 border-red-600 bg-red-400 px-4 py-2 rounded-2xl">
@@ -71,9 +72,9 @@ export default async function Home() {
 
             </section>
 
-            <section className="flex flex-col gap-8 w-full p-6 sm:p-14">
+            <section id={"Contact"} className="flex flex-col gap-8 w-full p-6 sm:p-14">
                 <h2 className="sm:text-5xl text-2xl">Contact</h2>
-
+                <ContactForm/>
             </section>
         </div>
     );
