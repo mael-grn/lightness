@@ -25,7 +25,7 @@ const Geologicaa = Geologica({
 
 export const metadata: Metadata = {
     title: "Lightness Duo",
-    description: "",
+    description: "Duo piano, synthétiseur et voix. Découvrez les compositions originales intimistes de Lightness, en concert privé ou sur scène en Drôme et Nouvelle-Aquitaine."
 };
 
 export default function RootLayout({children}: LayoutProps<"/">) {
