@@ -5,9 +5,11 @@ import {Musique} from "@/app/modeles";
 import ContactForm from "@/app/components/ContactForm";
 import Contactbtn from "@/app/components/ContactBtn";
 
+export const dynamic = 'force-dynamic';
+
 export default async function Home() {
     const [heroImageUrl, musiciens, musiques] = await Promise.all([
-        Services.getHeroImageUrl().catch(() => undefined),
+        Services.getHeroImageUrl().catch(() => null),
         Services.getMusiciens().catch(() => null),
         Services.getMusiques().catch(() => null),
     ]);
@@ -27,7 +29,7 @@ export default async function Home() {
                 <div className="flex flex-col gap-8 w-full">
                     {
                         !musiciens || musiciens.length === 0 ?
-                            <p>Hum, il semble qu&apos;il manque quelques musiciens...</p>
+                            <p className={"w-full text-center"}>Hum, il semble qu&apos;il manque quelques musiciens...</p>
                             :
                             musiciens.map((m, index) => (
 
@@ -48,7 +50,7 @@ export default async function Home() {
                 <div className="flex justify-center flex-wrap gap-4 w-full">
                     {
                         !musiques || musiques.length === 0 ?
-                            <p>Hum, il semble qu&apos;il manque quelques musiques...</p>
+                            <p className={"w-full text-center"}>Hum, il semble qu&apos;il manque quelques musiques...</p>
                             :
                             musiques.map((m, index) => (
                                 <MusiqueCard musique={m} key={index}/>

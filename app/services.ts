@@ -10,7 +10,7 @@ export default class Services {
     static async getHeroImageUrl(): Promise<string | undefined> {
         const sql = this.getSql();
         // Syntaxe SQL corrigée avec SELECT <champ> et ORDER BY
-        const rows = await sql`SELECT nom FROM heroImage ORDER BY id DESC LIMIT 1`;
+        const rows = await sql`SELECT nom FROM heroImage`;
         return rows[0]?.nom;
     }
 
