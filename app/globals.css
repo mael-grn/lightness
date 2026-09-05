@@ -5,7 +5,6 @@
   --foreground: #1B1B1E;
   --primary: #373F51;
   --secondary: #A9BCD0;
-
 }
 
 @theme inline {
@@ -16,14 +15,17 @@
 
 body {
   color: var(--foreground);
-  font-family: Geologica, Helvetica, sans-serif;
+  font-family: var(--font-geologica), Helvetica, sans-serif;
 }
 
 h1, h2, h3 {
-  font-family: Limelight, Helvetica, sans-serif;
+  font-family: var(--font-valley-sans), Helvetica, sans-serif;
 }
 
 p {
-  font-family: Bricolage Grotesque, Helvetica, sans-serif;
-  color: black;
+  font-family: var(--font-brico), Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
 }

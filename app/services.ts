@@ -33,7 +33,7 @@ export default class Services {
                 // 1. Mail principal pour l'administrateur
                 {
                     from: "Lightness Duo <contact@mail.lightness-duo.fr>",
-                    to: ["bo.garnier26@gmail.com"],
+                    to: ["bo.garnier26@gmail.com", "duo.lightness@gmail.fr"],
                     replyTo: email,
                     subject: `Nouveau message de contact - ${identite}`,
                     text: `Nouveau message reçu depuis le site :\n\nDe : ${identite} (${email})\n\nMessage :\n${message}`,

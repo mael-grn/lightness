@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
-import {Bricolage_Grotesque, Limelight, Geologica} from "next/font/google";
+    import {Limelight, Geologica, Bricolage_Grotesque} from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import PageWrapper from "@/app/components/PageWrapper";
 import NavBar from "@/app/components/NavBar";
@@ -10,11 +11,12 @@ const brico = Bricolage_Grotesque({
     weight: "400"
 });
 
-const limelight = Limelight({
-    variable: "--font-lime",
-    weight: "400",
-    subsets: ["latin"],
+const valleySans = localFont({
+    src: "../public/fonts/ValleySans-VariableFont_wght.ttf",
+    variable: "--font-valley-sans",
+    display: "swap",
 });
+
 
 const Geologicaa = Geologica({
     variable: "--font-geologica",
@@ -30,21 +32,10 @@ export default function RootLayout({children}: LayoutProps<"/">) {
     return (
         <html
             lang="fr"
-            className={`${limelight.variable} ${brico.variable} ${Geologicaa.variable} h-full antialiased overflow-x-hidden`}
+            className={`${valleySans.variable} ${brico.variable} ${Geologicaa.variable}`}
         >
-        <body className="min-h-screen scroll-smooth bg-background w-full overflow-x-hidden"><NavProvider>
-            <header>
-                <NavBar/>
-            </header>
-            <PageWrapper>
-                <div
-                    className={"fixed z-100 top-0 left-0 w-full h-40 bg-linear-to-b from-background to-transparent"}></div>
-                {children}
-                <div
-                    className={"fixed z-100 bottom-0 left-0 w-full h-20 bg-linear-to-t from-background to-transparent"}></div>
-            </PageWrapper>
-        </NavProvider>
-
+        <body className="min-h-screen bg-background w-full sm:p-20 p-6 flex flex-col sm:gap-24 gap-16 items-center">
+        {children}
         </body>
         </html>
     );
