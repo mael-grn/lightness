@@ -37,6 +37,9 @@ export default function RootLayout({children}: LayoutProps<"/">) {
         <body className="min-h-screen bg-background w-full sm:p-20 p-6 flex flex-col sm:gap-24 gap-16 items-center">
         {children}
         </body>
+        <div>
+            © 2026 Lightness. Tous droits réservés
+        </div>
         </html>
     );
 }

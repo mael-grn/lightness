@@ -1,0 +1,15 @@
+- Cartes des musiques : prendre en compte paysage en plus de portrait pour images
+
+- Création de sous pages personnalisées
+
+- Modification ordre listes
+
+- boutons laison facebook, insta, yt
+
+- texte conclusif présentation des musiciens
+
+- navigation multi pages plutot que single page
+
+- Mention protection doits reservés
+
+- afficher la boite mail du groupe, tel et mail chacun
