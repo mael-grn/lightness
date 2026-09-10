@@ -1,17 +1,13 @@
 
 import Services from "@/app/services";
-import {MusiqueCard} from "@/app/components/MusiqueCard";
-import {Musique} from "@/app/modeles";
-import ContactForm from "@/app/components/ContactForm";
-import Contactbtn from "@/app/components/ContactBtn";
+import Link from "next/link";
 
 export const dynamic = 'force-dynamic';
 
 export default async function Home() {
-    const [heroImageUrl, musiciens, musiques] = await Promise.all([
+    const [heroImageUrl, pages] = await Promise.all([
         Services.getHeroImageUrl().catch(() => null),
-        Services.getMusiciens().catch(() => null),
-        Services.getMusiques().catch(() => null),
+        Services.getPages().catch(() => null),
     ]);
 
     return (
@@ -21,45 +17,26 @@ export default async function Home() {
                     Lightness Duo
                 </h1>
                 <img className={" h-2/3 object-cover rounded-4xl"}
-                     src={heroImageUrl && heroImageUrl.length > 0 ? heroImageUrl : "/default-bg.jpg"}/>
+                     src={(heroImageUrl && heroImageUrl.length > 0) ? "/default-bg.jpg" : "/default-bg.jpg"}/>
             </div>
 
-            <section id={"Musiciens"} className="flex -mt-10 flex-col items-center gap-12 w-full">
-                <h2 className="sm:text-7xl text-5xl">Musiciens</h2>
-                <div className="flex flex-col gap-8 w-full">
-                    {
-                        !musiciens || musiciens.length === 0 ?
-                            <p className={"w-full text-center"}>Hum, il semble qu&apos;il manque quelques musiciens...</p>
-                            :
-                            musiciens.map((m, index) => (
-
-                                <div key={index}
-                                     className={`flex items-center flex-col justify-center items-center`}>
-                                    <img src={m.chemin_photo} alt={m.nom}
-                                         className="w-full w-full max-w-60 object-cover flex-1 sm:max-h-fit max-h-72 h-fit rounded-xl"/>
-                                    <p className="sm:text-4xl mt-4 font-bold w-full text-center text-2xl">{m.prenom} {m.nom}</p>
-                                    <p className={"text-sm w-full mb-4 text-center opacity-60"}>{m.attribut}</p>
-                                    <p className={"text-center w-full max-w-[700px]"}>{m.description}</p>
-                                </div>
-                            ))}
-                </div>
+            <section className={"w-full flex flex-col gap-4 items-center justify-center"}>
+                {
+                    pages ?
+                    pages.map((p) => <Link
+                        key={p.id}
+                        href={"/view/" + p.id}
+                        className={"w-full px-6 py-3 rounded-full bg-primary text-background flex items-center justify-center hover:opacity-75 active:scale-90 transition-all"}
+                    >
+                        {p.titre}
+                    </Link>)
+                        :
+                        <div className={"w-full flex flex-col gap-4 items-center justify-center"}>
+                            <img src={"/empty.svg"} className={" w-8 h-8"}/>
+                            <h2 className={"text-center text-xl"}>Il semble qu&apos;aucune page n&apos;a été ajoutée pour le moment.</h2>
+                        </div>
+                }
             </section>
-
-            <section id={"Musiques"} className="flex flex-col gap-12 mb-20 items-center w-full">
-                <h2 className="sm:text-7xl text-5xl">Musiques</h2>
-                <div className="flex justify-center flex-wrap gap-4 w-full">
-                    {
-                        !musiques || musiques.length === 0 ?
-                            <p className={"w-full text-center"}>Hum, il semble qu&apos;il manque quelques musiques...</p>
-                            :
-                            musiques.map((m, index) => (
-                                <MusiqueCard musique={m} key={index}/>
-                            ))}
-                </div>
-
-            </section>
-
-            <Contactbtn/>
 
         </>
     );

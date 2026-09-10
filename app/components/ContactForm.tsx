@@ -48,7 +48,7 @@ export default function ContactForm() {
         <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="flex flex-col gap-5 w-full max-w-xl mx-auto p-6 sm:p-8 rounded-3xl bg-background/80 backdrop-blur-md border border-secondary/40"
+            className="flex flex-col gap-5 w-full bg-transparent"
         >
             <div className="flex flex-col gap-1.5">
                 <label htmlFor="identite" className="text-xs font-semibold uppercase tracking-wider text-foreground/70">

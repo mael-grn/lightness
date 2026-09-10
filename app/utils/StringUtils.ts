@@ -1,0 +1,222 @@
+/**
+ * Utility class for string manipulation.
+ */
+export default class StringUtil {
+
+    /**
+     * Permet de tronquer une chaîne de caractères à une longueur spécifiée, en ajoutant "..." à la fin si elle dépasse cette longueur.
+     * @param str La chaîne de caractères à tronquer.
+     * @param num La longueur maximale de la chaîne de caractères. Si la chaîne dépasse cette longueur, elle sera tronquée et "..." sera ajouté à la fin.
+     */
+    static truncateString(str: string, num: number): string {
+        if (str.length <= num) {
+            return str;
+        }
+        return str.slice(0, num) + '...';
+    }
+
+    static nettoyerTexte(chaine: string): string {
+        return chaine
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/ /g, "%20")
+            .replace(/[^a-zA-Z0-9%]/g, "");
+    }
+
+    static getErrorMessageFromStatus(
+        status: number,
+        customMessage?: { code: number, message: string }
+    ): string {
+        if (customMessage && customMessage.code === status) {
+            return `${customMessage.message} (${status})`;
+        }
+        switch (status) {
+            case 400:
+                return "The sent request is invalid. Please check the entered information and try again. (400)";
+            case 401:
+                return "You must be logged in to access this resource. Please authenticate. (401)";
+            case 403:
+                return "You do not have the necessary permissions to perform this action. Contact an administrator if needed. (403)";
+            case 404:
+                return "The requested resource was not found. Check the URL or try again later. (404)";
+            case 409:
+                return "A conflict was detected with existing data. Please check your information and try again. (409)";
+            case 422:
+                return "Some provided data is invalid. Please correct the indicated fields and try again. (422)";
+            case 429:
+                return "You have made too many requests in a short time. Please wait before trying again. (429)";
+            case 500:
+                return "An internal server error occurred. Please try again later or contact support if the problem persists. (500)";
+            case 502:
+                return "The server received an invalid response. Please try again later. (502)";
+            case 503:
+                return "The service is temporarily unavailable. Please try again in a few moments. (503)";
+            case 504:
+                return "The timeout limit was reached. Please check your connection or try again later. (504)";
+            case -1:
+                return "An application error occurred. Please try again or contact support.";
+            default:
+                return `An unexpected error occurred. Please try again or contact support. (${status})`;
+        }
+    }
+
+    /**
+     * Check if no invalid character is being used, and if there is at least on character
+     * @param value
+     * @param minLength
+     * @param maxLength
+     */
+    static basicStringValidator(value: string, minLength?: number, maxLength?: number): string | null {
+
+        if (value.length < (minLength || 1) || (maxLength && value.length > maxLength)) {
+            return `The text must contain between ${minLength || 1} and ${maxLength || "an infinite number of"} characters.`;
+        } else {
+            return null;
+        }
+    }
+
+    /**
+     * Only check the lenght of the password
+     * @param password
+     */
+    static passwordStringValidator(password: string): string | null {
+        if (password.length < 8) return "The password must contain at least 8 characters.";
+        return null;
+    }
+
+    /**
+     * Check a path (in a url) format
+     * @param path
+     */
+    static pathStringValidator(path: string): string | null {
+        if (!path.startsWith("/") || path.length < 2 || path.includes(' ')) return "The path must start with '/' and contain no spaces.";
+        return null;
+    }
+
+    /**
+     * Check email format
+     * @param email
+     */
+    static emailStringValidator(email: string): string | null {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) return "The email address is invalid.";
+        return null;
+    }
+
+    /**
+     * check website domain format
+     * @param domain
+     */
+    static domainValidator(domain: string): string | null {
+        const domainRegex = /^(?!-)(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,63}$/;
+        if (!domainRegex.test(domain)) return "The domain is invalid.";
+        return null;
+    }
+
+    static urlValidator(urlString: string): string | null {
+        const trimmed = urlString.trim();
+        if (!trimmed) return "Mauvais URL.";
+
+        try {
+            const url = new URL(trimmed);
+            return url.protocol === "http:" || url.protocol === "https:" ? null : "Wrong protocol";
+        } catch {
+            return "Invalid URL.";
+        }
+    }
+
+    /**
+     * Valide si une chaîne de caractères est au format SVG.
+     * Vérifie la présence des balises et effectue un contrôle de sécurité basique.
+     * @param svgString La chaîne à valider.
+     */
+    static svgOrEmptyStringValidator(svgString: string): string | null {
+        const trimmedSvg = svgString.trim().toLowerCase();
+
+        if (trimmedSvg === "") {
+            return null; // Accepte une chaîne vide
+        }
+
+        // Vérifie si la chaîne commence et finit par les balises svg
+        if (!trimmedSvg.startsWith("<svg") || !trimmedSvg.endsWith("</svg>")) {
+            return "The SVG format is invalid. It must start with '<svg' and end with '</svg>'.";
+        }
+
+        // Vérification de sécurité contre l'injection de scripts (XSS)
+        const dangerousPatterns = /<script|on\w+=/i;
+        if (dangerousPatterns.test(svgString)) {
+            return "The SVG contains prohibited scripts or event handlers.";
+        }
+
+        return null;
+    }
+
+    /**
+     * Check the format of the domain, but it can also be an empty string
+     * @param domain
+     */
+    static emptyableDomainValidator(domain: string): string | null {
+        if (domain === "") return null;
+        const domainRegex = /^(?!-)(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,63}$/;
+        if (!domainRegex.test(domain)) return "The domain is invalid.";
+        return null;
+    }
+
+    /**
+     * Check if the provided string is an hex color
+     * @param color
+     */
+    static hexColorValidator(color: string): string | null {
+        const hexColorRegex = /^#([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})$/;
+        if (!hexColorRegex.test(color)) return "The HEX color code is invalid.";
+        return null;
+    }
+
+    /**
+     * Check if a string is actually a number
+     * @param value
+     */
+    static isInteger(value: string): boolean {
+        // accepts +/- signs, digits only
+        return /^[+-]?\d+$/.test(value.trim());
+    }
+
+    static getBetweenString(prev: string = "", next: string = ""): string {
+        const minCode = "a".charCodeAt(0); // 97
+        const maxCode = "z".charCodeAt(0); // 122
+        const midChar = "n";
+
+        if (!next) {
+            return prev + midChar;
+        }
+
+        if (prev >= next) {
+            throw new Error("Le premier string doit être strictement inférieur au deuxième.");
+        }
+
+        let i = 0;
+        while (true) {
+            const pCode = i < prev.length ? prev.charCodeAt(i) : minCode;
+            const nCode = i < next.length ? next.charCodeAt(i) : maxCode + 1;
+
+            if (pCode === nCode) {
+                i++;
+                continue;
+            }
+
+            // S'il y a de la place entre les deux caractères
+            if (nCode - pCode > 1) {
+                const midCode = Math.floor((pCode + nCode) / 2);
+                return prev.slice(0, i) + String.fromCharCode(midCode);
+            }
+
+            // Caractères consécutifs (ex: pCode = 97 ('a'), nCode = 98 ('b'))
+            // On fixe le caractère courant à pChar et on cherche un suffixe après le reste de prev
+            const pChar = String.fromCharCode(pCode);
+            const prefix = prev.slice(0, i) + pChar;
+            const remainderPrev = i < prev.length ? prev.slice(i + 1) : "";
+
+            return prefix + StringUtil.getBetweenString(remainderPrev);
+        }
+    }
+}
