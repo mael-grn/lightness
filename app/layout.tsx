@@ -6,6 +6,7 @@ import PageWrapper from "@/app/components/PageWrapper";
 import NavBar from "@/app/components/NavBar";
 import {NavProvider} from "@/app/context/NavContext";
 import BottomNav from "@/app/components/BottomNav";
+import Footer from "@/app/components/Footer";
 
 const brico = Bricolage_Grotesque({
     variable: "--font-brico",
@@ -35,13 +36,13 @@ export default function RootLayout({children}: LayoutProps<"/">) {
             lang="fr"
             className={`${valleySans.variable} ${brico.variable} ${Geologicaa.variable}`}
         >
-        <body className="min-h-screen bg-background w-full sm:p-20 pb-32 p-6 flex flex-col sm:gap-24 gap-16 items-center">
-        {children}
-        <BottomNav/>
+        <body className={"bg-background"}>
+        <main  className="min-h-screen bg-background w-full sm:p-20 p-6 flex flex-col sm:gap-24 gap-16 items-center">
+            {children}
+            <BottomNav/>
+        </main>
+        <Footer/>
         </body>
-        <div>
-            © 2026 Lightness. Tous droits réservés
-        </div>
         </html>
     );
 }

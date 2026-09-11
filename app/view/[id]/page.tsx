@@ -1,4 +1,5 @@
 import Services from "@/app/services";
+import Anm from "@/app/components/Animator3000";
 
 type PageProps = {
     params: Promise<{ id: string }>;
@@ -17,22 +18,30 @@ export default async function Page({params}: PageProps) {
         </main>
     }
     return <main className={"flex flex-col gap-3 justify-center items-center"}>
-        <h1 className={"text-4xl font-bold text-center mb-10"}>{pageDetails.page.titre}</h1>
+        <Anm>
+            <h1 className={"text-4xl font-bold text-center mb-10"}>{pageDetails.page.titre}</h1>
+        </Anm>
         {
-            pageDetails.elements.sort((a, b)=>a.position!>b.position!?1:-1).map((e) => {
+            pageDetails.elements.sort((a, b)=>a.position!>b.position!?1:-1).map((e, i) => {
                 console.log(e)
                 console.log(pageDetails.titres);
                 if (pageDetails.titres.find((t) => t.element_id === e.id)) {
-                    return <h1 className={"text-2xl mt-6 mb-2 text-center font-bold"}
-                               key={e.id}>{pageDetails.titres.find((t) => t.element_id === e.id)!.value}</h1>
+                    return <Anm delay={0.1+i/8} key={e.id}>
+                        <h1 className={"text-2xl mt-6 mb-2 text-center font-bold"}
+                            >{pageDetails.titres.find((t) => t.element_id === e.id)!.value}</h1>
+                    </Anm>
                 }
                 if (pageDetails.textes.find((t) => t.element_id === e.id)) {
-                    return <p className={"text-center"}
-                              key={e.id}>{pageDetails.textes.find((t) => t.element_id === e.id)!.value.split('\n').map((txtprt, i) => <span key={`${e.id}txt${i}`}>{txtprt}<br/></span>)}</p>
+                    return <Anm delay={0.1+i/8} key={e.id}>
+                        <p className={"text-center"}
+                           >{pageDetails.textes.find((t) => t.element_id === e.id)!.value.split('\n').map((txtprt, i) => <span key={`${e.id}txt${i}`}>{txtprt}<br/></span>)}</p>
+                    </Anm>
                 }
 
                 if (pageDetails.photos.find((p) => p.element_id === e.id)) {
-                    return <img className={"max-w-[500px] w-full object-contain rounded-xl"} key={e.id} src={pageDetails.photos.find((p) => p.element_id === e.id)!.chemin} alt={"illustration"+e.id}/>
+                    return <Anm key={e.id} delay={0.1+i/8}>
+                        <img className={"max-w-[500px] w-full object-contain rounded-xl"}  src={pageDetails.photos.find((p) => p.element_id === e.id)!.chemin} alt={"illustration"+e.id}/>
+                    </Anm>
                 }
             })
         }

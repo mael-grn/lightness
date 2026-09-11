@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6f1e57d-0183-4ca9-9f1d-026051361b7e" name="Changes" comment="Nouvelle version avec les pages dynamiques">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/lightness.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Animator3000.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/Popup.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/ReseauBtn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/btn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/cross.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/insta.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/send.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/youtube.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/BottomNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BottomNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ContactBtn.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/view/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/[id]/page.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="5400e443-0a58-4597-876c-d7110e453af9" value="" />
+    </colors>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="39" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mael-grn&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mael-grn/lightness.git&quot;,
+    &quot;accountId&quot;: &quot;900c8fb6-a264-4c07-985c-75327233868e&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000000267588" />
+      <entry key="S2" value="1.0102137173786545" />
+      <entry key="S5" value="1.557556595787315" />
+      <entry key="S10" value="3.2374318042848524" />
+      <entry key="S30" value="8.437283879831021" />
+      <entry key="S60" value="14.23964284760019" />
+      <entry key="M2" value="22.350936979852747" />
+      <entry key="M5" value="37.00147855262286" />
+      <entry key="M10" value="56.28983516079647" />
+      <entry key="M15" value="73.41460001439485" />
+      <entry key="M30" value="119.46219160098815" />
+      <entry key="H1" value="193.7875164773754" />
+      <entry key="H2" value="307.52219474848425" />
+      <entry key="H4" value="444.71310015893823" />
+      <entry key="D1" value="673.1145335535194" />
+      <entry key="W1" value="730.6965491392297" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="2.8692098429584526E-100" />
+      <entry key="S5" value="2.3568592580338973E-40" />
+      <entry key="S10" value="2.4138118627388996E-20" />
+      <entry key="S30" value="6.169252126674519E-7" />
+      <entry key="S60" value="0.0016723367037166149" />
+      <entry key="M2" value="0.10593982936279693" />
+      <entry key="M5" value="1.9186854304951033" />
+      <entry key="M10" value="6.767641482470173" />
+      <entry key="M15" value="11.929278985332571" />
+      <entry key="M30" value="27.39195964602596" />
+      <entry key="H1" value="52.54978736677415" />
+      <entry key="H2" value="89.12593510489" />
+      <entry key="H4" value="132.41888553491998" />
+      <entry key="D1" value="204.50850223366132" />
+      <entry key="W1" value="222.73605366823378" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.3100668890956934E-5" />
+      <entry key="MS500" value="0.10555011095138693" />
+      <entry key="S2" value="0.580027269393397" />
+      <entry key="S5" value="1.352889656613046" />
+      <entry key="S10" value="3.123510663511497" />
+      <entry key="S30" value="8.387154843695736" />
+      <entry key="S60" value="14.208625277970906" />
+      <entry key="M2" value="22.432380886507257" />
+      <entry key="M5" value="38.891250226124725" />
+      <entry key="M10" value="63.02125213339624" />
+      <entry key="M15" value="85.3050409499562" />
+      <entry key="M30" value="146.81353248273706" />
+      <entry key="H1" value="246.29965800003825" />
+      <entry key="H2" value="396.61626580573864" />
+      <entry key="H4" value="577.1081718242011" />
+      <entry key="D1" value="877.6168556982486" />
+      <entry key="W1" value="953.4316397209" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3ImmEDdfS3J1qpY3n8Weq5Mtz0c" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "js.debugger.nextJs.config.created.client": "true",
+    "js.debugger.nextJs.config.created.server": "true",
+    "last_opened_file_path": "/home/mael/Dev/lightness/app/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.Next.js: server-side.executor": "Run",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/mael/Dev/lightness/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/public/fonts" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-WS-262.10315.144" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d6f1e57d-0183-4ca9-9f1d-026051361b7e" name="Changes" comment="" />
+      <created>1788378003693</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788378003693</updated>
+      <workItem from="1788378004809" duration="7964000" />
+      <workItem from="1788425918355" duration="4482000" />
+      <workItem from="1788462101509" duration="4765000" />
+      <workItem from="1788510365780" duration="33000" />
+      <workItem from="1788555403358" duration="38000" />
+      <workItem from="1788621616667" duration="84000" />
+      <workItem from="1788628589206" duration="2860000" />
+      <workItem from="1788633393779" duration="2132000" />
+      <workItem from="1788638219759" duration="3800000" />
+      <workItem from="1788643572781" duration="260000" />
+      <workItem from="1788644287265" duration="1246000" />
+      <workItem from="1788646222231" duration="186000" />
+      <workItem from="1788646418301" duration="6000" />
+      <workItem from="1788763437939" duration="2301000" />
+      <workItem from="1788813451266" duration="87000" />
+      <workItem from="1788853996632" duration="7000" />
+      <workItem from="1788864327670" duration="227000" />
+      <workItem from="1789037553941" duration="11307000" />
+      <workItem from="1789059869865" duration="4208000" />
+      <workItem from="1789115272932" duration="5230000" />
+    </task>
+    <task id="LOCAL-00001" summary="ajout musiciens">
+      <option name="closed" value="true" />
+      <created>1788383990769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1788383990769</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ajout musiques">
+      <option name="closed" value="true" />
+      <created>1788385958811</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1788385958811</updated>
+    </task>
+    <task id="LOCAL-00003" summary="correction de bugs">
+      <option name="closed" value="true" />
+      <created>1788466242502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1788466242503</updated>
+    </task>
+    <task id="LOCAL-00004" summary="correction de bugs envoi email">
+      <option name="closed" value="true" />
+      <created>1788466572238</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1788466572238</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mise a jour du style, correction de bugs">
+      <option name="closed" value="true" />
+      <created>1788642913006</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1788642913006</updated>
+    </task>
+    <task id="LOCAL-00006" summary="remplacement favicon">
+      <option name="closed" value="true" />
+      <created>1788643597771</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1788643597771</updated>
+    </task>
+    <task id="LOCAL-00007" summary="correction bug">
+      <option name="closed" value="true" />
+      <created>1788644649455</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1788644649455</updated>
+    </task>
+    <task id="LOCAL-00008" summary="description dans les meta data pour google">
+      <option name="closed" value="true" />
+      <created>1788646373241</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1788646373241</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ajout protection">
+      <option name="closed" value="true" />
+      <created>1788813534094</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1788813534094</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Nouvelle version avec les pages dynamiques">
+      <option name="closed" value="true" />
+      <created>1789070298371</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1789070298371</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajout musiciens" />
+    <MESSAGE value="ajout musiques" />
+    <MESSAGE value="correction de bugs" />
+    <MESSAGE value="correction de bugs envoi email" />
+    <MESSAGE value="mise a jour du style, correction de bugs" />
+    <MESSAGE value="remplacement favicon" />
+    <MESSAGE value="correction bug" />
+    <MESSAGE value="description dans les meta data pour google" />
+    <MESSAGE value="ajout protection" />
+    <MESSAGE value="Nouvelle version avec les pages dynamiques" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nouvelle version avec les pages dynamiques" />
+  </component>
+</project>
