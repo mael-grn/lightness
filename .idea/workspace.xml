@@ -4,32 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6f1e57d-0183-4ca9-9f1d-026051361b7e" name="Changes" comment="Nouvelle version avec les pages dynamiques">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5400e443-0a58-4597-876c-d7110e453af9/storage_v2/_src_/database/neondb.1Hh4wQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/data_sources_history.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lightness.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Animator3000.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/Popup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/ReseauBtn.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/btn.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/cross.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/insta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/send.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/youtube.png" afterDir="false" />
+    <list default="true" id="d6f1e57d-0183-4ca9-9f1d-026051361b7e" name="Changes" comment="Prise en compte des nouvelles pages, amélioration des styles">
+      <change afterPath="$PROJECT_DIR$/app/components/MusicLector.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/BottomNav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BottomNav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ContactBtn.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ContactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/view/[id]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/view/[id]/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,60 +53,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000000267588" />
-      <entry key="S2" value="1.0102137173786545" />
-      <entry key="S5" value="1.557556595787315" />
-      <entry key="S10" value="3.2374318042848524" />
-      <entry key="S30" value="8.437283879831021" />
-      <entry key="S60" value="14.23964284760019" />
-      <entry key="M2" value="22.350936979852747" />
-      <entry key="M5" value="37.00147855262286" />
-      <entry key="M10" value="56.28983516079647" />
-      <entry key="M15" value="73.41460001439485" />
-      <entry key="M30" value="119.46219160098815" />
-      <entry key="H1" value="193.7875164773754" />
-      <entry key="H2" value="307.52219474848425" />
-      <entry key="H4" value="444.71310015893823" />
-      <entry key="D1" value="673.1145335535194" />
-      <entry key="W1" value="730.6965491392297" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.000000000000071" />
+      <entry key="S30" value="1.0000558278012726" />
+      <entry key="S60" value="1.0108337110351133" />
+      <entry key="M2" value="1.2329076520493645" />
+      <entry key="M5" value="6.384255065243899" />
+      <entry key="M10" value="24.779807887401503" />
+      <entry key="M15" value="44.71631610394187" />
+      <entry key="M30" value="98.39718454987562" />
+      <entry key="H1" value="182.25957146525678" />
+      <entry key="H2" value="305.6527925363963" />
+      <entry key="H4" value="453.325775646634" />
+      <entry key="D1" value="702.1917384897996" />
+      <entry key="W1" value="765.622189794896" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.8692098429584526E-100" />
-      <entry key="S5" value="2.3568592580338973E-40" />
-      <entry key="S10" value="2.4138118627388996E-20" />
-      <entry key="S30" value="6.169252126674519E-7" />
-      <entry key="S60" value="0.0016723367037166149" />
-      <entry key="M2" value="0.10593982936279693" />
-      <entry key="M5" value="1.9186854304951033" />
-      <entry key="M10" value="6.767641482470173" />
-      <entry key="M15" value="11.929278985332571" />
-      <entry key="M30" value="27.39195964602596" />
-      <entry key="H1" value="52.54978736677415" />
-      <entry key="H2" value="89.12593510489" />
-      <entry key="H4" value="132.41888553491998" />
-      <entry key="D1" value="204.50850223366132" />
-      <entry key="W1" value="222.73605366823378" />
+      <entry key="MS100" value="4.580244962239299E-8" />
+      <entry key="MS500" value="0.03405475350666651" />
+      <entry key="S2" value="0.42958037747359246" />
+      <entry key="S5" value="0.713210575231217" />
+      <entry key="S10" value="0.8445179543579738" />
+      <entry key="S30" value="0.9453305115300866" />
+      <entry key="S60" value="0.9852061192762036" />
+      <entry key="M2" value="1.2137163892281222" />
+      <entry key="M5" value="2.9959718753513784" />
+      <entry key="M10" value="6.985077871999319" />
+      <entry key="M15" value="11.487850003094726" />
+      <entry key="M30" value="26.038233776780647" />
+      <entry key="H1" value="51.819153758712" />
+      <entry key="H2" value="90.30668604146054" />
+      <entry key="H4" value="136.36038255477504" />
+      <entry key="D1" value="214.42376755494843" />
+      <entry key="W1" value="234.41127535497952" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.3100668890956934E-5" />
-      <entry key="MS500" value="0.10555011095138693" />
-      <entry key="S2" value="0.580027269393397" />
-      <entry key="S5" value="1.352889656613046" />
-      <entry key="S10" value="3.123510663511497" />
-      <entry key="S30" value="8.387154843695736" />
-      <entry key="S60" value="14.208625277970906" />
-      <entry key="M2" value="22.432380886507257" />
-      <entry key="M5" value="38.891250226124725" />
-      <entry key="M10" value="63.02125213339624" />
-      <entry key="M15" value="85.3050409499562" />
-      <entry key="M30" value="146.81353248273706" />
-      <entry key="H1" value="246.29965800003825" />
-      <entry key="H2" value="396.61626580573864" />
-      <entry key="H4" value="577.1081718242011" />
-      <entry key="D1" value="877.6168556982486" />
-      <entry key="W1" value="953.4316397209" />
+      <entry key="MS100" value="6.828958631860273E-6" />
+      <entry key="MS500" value="0.10621887916894349" />
+      <entry key="S2" value="0.8929902994922713" />
+      <entry key="S5" value="1.4387814346005445" />
+      <entry key="S10" value="1.6943874121891092" />
+      <entry key="S30" value="1.8921207072016435" />
+      <entry key="S60" value="1.9687844552676412" />
+      <entry key="M2" value="2.4310671648016506" />
+      <entry key="M5" value="9.364635737047072" />
+      <entry key="M10" value="31.741895597366444" />
+      <entry key="M15" value="56.17631164986639" />
+      <entry key="M30" value="124.40128538582677" />
+      <entry key="H1" value="234.04377869934237" />
+      <entry key="H2" value="395.9283146753276" />
+      <entry key="H4" value="589.662219586333" />
+      <entry key="D1" value="916.6091281378017" />
+      <entry key="W1" value="1000.0324662477918" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -146,39 +124,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "/home/mael/Dev/lightness/app/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.Next.js: server-side.executor": "Run",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/home/mael/Dev/lightness/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/mael/Dev/lightness/app/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.Next.js: server-side.executor&quot;: &quot;Run&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/mael/Dev/lightness/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/components" />
@@ -237,7 +215,8 @@
       <workItem from="1788864327670" duration="227000" />
       <workItem from="1789037553941" duration="11307000" />
       <workItem from="1789059869865" duration="4208000" />
-      <workItem from="1789115272932" duration="5230000" />
+      <workItem from="1789115272932" duration="5564000" />
+      <workItem from="1789136330294" duration="1279000" />
     </task>
     <task id="LOCAL-00001" summary="ajout musiciens">
       <option name="closed" value="true" />
@@ -319,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789070298371</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Prise en compte des nouvelles pages, amélioration des styles">
+      <option name="closed" value="true" />
+      <created>1789120824042</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1789120824042</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +323,7 @@
     <MESSAGE value="description dans les meta data pour google" />
     <MESSAGE value="ajout protection" />
     <MESSAGE value="Nouvelle version avec les pages dynamiques" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nouvelle version avec les pages dynamiques" />
+    <MESSAGE value="Prise en compte des nouvelles pages, amélioration des styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prise en compte des nouvelles pages, amélioration des styles" />
   </component>
 </project>

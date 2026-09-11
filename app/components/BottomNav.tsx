@@ -26,7 +26,7 @@ export default function BottomNav() {
             animate={{y:0}}
             exit={{y:300}}
             layout
-            className={"w-full flex gap-2 items-center p-4 justify-end fixed bottom-0 left-0 bg-linear-to-b from-transparent to-background"}
+            className={"w-full flex gap-2 items-center p-4 justify-end fixed bottom-0 left-0"}
         >
             <AnimatePresence mode="popLayout">
                 {pathname !== "/" && (
@@ -123,7 +123,7 @@ export function NavPopup({show, close}: { show: boolean; close: () => void }) {
                         duration: 0.3,
                         ease: [0.16, 1, 0.3, 1],
                     }}
-                    className={"absolute pb-3 bottom-20 z-90 text-background right-4 overflow-hidden flex flex-col w-fit h-fit rounded-2xl bg-primary shadow-lg"}
+                    className={"absolute p-4 bottom-20 gap-1 z-90 text-background right-4 overflow-hidden flex flex-col w-fit h-fit rounded-4xl bg-primary shadow-lg"}
                 >
                     {isLoading && (
                         <div className="px-4 py-2 text-sm opacity-70">Chargement...</div>
@@ -131,7 +131,7 @@ export function NavPopup({show, close}: { show: boolean; close: () => void }) {
 
                     <motion.h1
                         whileTap={{ scale: 0.9 }}
-                        className={"px-4 py-1 pt-3 text-xl font-bold hover:bg-black/10 transition-colors"}
+                        className={"text-center text-xl font-bold mb-3"}
                     >
                         Pages disponibles
                     </motion.h1>
@@ -140,7 +140,8 @@ export function NavPopup({show, close}: { show: boolean; close: () => void }) {
                         <MotionLink
                             key={p.id}
                             whileTap={{ scale: 0.9 }}
-                            className={"px-4 py-1 text-lg font-normal hover:bg-black/10 transition-colors block"}
+                            whileHover={{opacity:0.9}}
+                            className={"px-4 py-2 text-lg text-center font-normal rounded-full bg-background text-foreground"}
                             href={"/view/" + p.id}
                             onClick={close}
                         >

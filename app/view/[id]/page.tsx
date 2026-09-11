@@ -1,5 +1,6 @@
 import Services from "@/app/services";
 import Anm from "@/app/components/Animator3000";
+import MusicLector from "@/app/components/MusicLector";
 
 type PageProps = {
     params: Promise<{ id: string }>;
@@ -17,7 +18,7 @@ export default async function Page({params}: PageProps) {
             <p>Vérifiez l&apos;url.</p>
         </main>
     }
-    return <main className={"flex flex-col gap-3 justify-center items-center"}>
+    return <main className={"flex flex-col gap-3 justify-center w-full items-center"}>
         <Anm>
             <h1 className={"text-4xl font-bold text-center mb-10"}>{pageDetails.page.titre}</h1>
         </Anm>
@@ -41,6 +42,12 @@ export default async function Page({params}: PageProps) {
                 if (pageDetails.photos.find((p) => p.element_id === e.id)) {
                     return <Anm key={e.id} delay={0.1+i/8}>
                         <img className={"max-w-[500px] w-full object-contain rounded-xl"}  src={pageDetails.photos.find((p) => p.element_id === e.id)!.chemin} alt={"illustration"+e.id}/>
+                    </Anm>
+                }
+
+                if (pageDetails.musiques.find((p) => p.element_id === e.id)) {
+                    return <Anm key={e.id} delay={0.1+i/8} className={"w-full"}>
+                        <MusicLector autoPlay={false} musique={pageDetails.musiques.find((p) => p.element_id === e.id)!}></MusicLector>
                     </Anm>
                 }
             })
