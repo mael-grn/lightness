@@ -21,7 +21,7 @@ export default async function Home() {
                 </Anm>
                 <Anm y={0} scale={0} delay={0.2}>
                     <img className={" object-cover rounded-4xl"}
-                         src={(heroImageUrl && heroImageUrl.length > 0) ? "/default-bg.jpg" : "/default-bg.jpg"}/>
+                         src={(heroImageUrl && heroImageUrl.length > 0) ? heroImageUrl : "/default-bg.jpg"}/>
                 </Anm>
             </div>
 
